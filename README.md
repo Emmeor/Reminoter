@@ -1,1 +1,3 @@
 # Reminoter
+
+The noting reminder app, still in progress...
