@@ -64,6 +64,27 @@ class AppTextTheme {
 }
  
 /// THEMES ///
+enum AppThemeVariant { 
+ dark, 
+ light, 
+ sunset 
+ }
+
+class _VariantColors {
+  final Brightness brightness;
+  final Color background;
+  final Color primary;
+  final Color secondary;
+  final Color surface;
+ 
+  const _VariantColors({
+    required this.brightness,
+    required this.background,
+    required this.primary,
+    required this.secondary,
+    required this.surface,
+  });
+ 
 class AppTheme {
   AppTheme._();
  
