@@ -1,0 +1,1 @@
+_ticker = Timer.periodic(const Duration(seconds: 1), (_) => _tick());
