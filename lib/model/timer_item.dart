@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:audioplayers/audioplayers.dart';
 
 class TimerItem {
   TimerItem({
@@ -51,6 +52,7 @@ class TimerItem {
     if (running && done) {
       endAtMs = null;
       remainingSeconds = 0;
+      AudioPlayer().play(AssetSource('ringtone.wav'));
       return true;
     }
     return false;
