@@ -11,8 +11,8 @@ class NotificationService {
   static const _roastIds = [900001, 900002, 900003];
   static const _roastDelays = [
     Duration(hours: 2),
-    Duration(hours: 12),
-    Duration(hours: 36),
+    Duration(hours: 4),
+    Duration(hours: 8),
   ];
 
   static const _details = NotificationDetails(
