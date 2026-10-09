@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../models/timer_item.dart';
 import '../utils/format.dart';
 
@@ -57,10 +58,13 @@ class TimerCard extends StatelessWidget {
                     onPressed: onReset,
                     icon: const Icon(Icons.replay),
                   ),
-                  IconButton(
-                    tooltip: 'Delete',
-                    onPressed: onDelete,
-                    icon: const Icon(Icons.delete_outline),
+                  Padding(
+                    padding: const EdgeInsetsDirectional.only(end: 8),
+                    child: IconButton(
+                      tooltip: 'Delete',
+                      onPressed: onDelete,
+                      icon: const Icon(Icons.delete_outline),
+                    ),
                   ),
                 ],
               ),
